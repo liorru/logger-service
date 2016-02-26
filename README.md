@@ -6,7 +6,7 @@ Logger-service
   npm install logger-service --save
 
 ## Usage
-
+```
 var logger = require("config/logger")({
   remote: {
     type: 'powerball',
@@ -20,6 +20,9 @@ var logger = require("config/logger")({
 });
 
 logger.info('Express server listening on port 3000'; 
---
+
+// Like http listener using morgan
+
 var app = express();
 app.use(logger.httpListener);
+```
